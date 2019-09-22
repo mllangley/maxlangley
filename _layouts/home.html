@@ -1,0 +1,24 @@
+---
+layout: default
+title: Home
+---
+
+<style>
+canvas{
+  width: 1100px;
+  height: 750px;
+}
+</style>
+
+
+<canvas id="scene"></canvas>
+<input id="copy" type="text" value="ARTISTRY" style="display:none"/>
+<script src="assets/js/site.js"></script>
+
+
+{% for image in site.static_files %}
+    {% if image.path contains 'portfolio/' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
+
