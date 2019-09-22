@@ -12,6 +12,7 @@ permalink   : /:year/:title/
 title:		     "Max Langley"
 description:	     "Max Laurence Langley"
 author:              "@mllangley"
+baseurl:             "/maxlangley"
 
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
